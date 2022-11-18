@@ -1,0 +1,27 @@
+First Day of Flutter:
+----------------------
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: Text('First App'),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Container(
+          child: Center(
+            child: Image(
+              image: NetworkImage(
+                'https://i.pinimg.com/originals/15/f9/00/15f9007cc00d7f54dec4ba5ab8dd5816.jpg',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
